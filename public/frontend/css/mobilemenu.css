@@ -1,0 +1,58 @@
+.burger-container {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+.burger-container #burger, .burger-container #burger-main {
+    width: 18px;
+    height: 8px;
+    position: relative;
+    display: block;
+    margin: -4px auto 0;
+    top: 50%;
+  }
+
+.burger-container #burger .bar, .burger-container #burger-main .bar {
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: relative;
+    background: #000000;
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition-delay: 0s;
+}
+
+.burger-container #burger .bar.topBar, .burger-container #burger-main .bar.topBar {
+    transform: translateY(0px) rotate(0deg);
+}
+
+.burger-container #burger .bar.btmBar, .burger-container #burger-main .bar.btmBar {
+    transform: translateY(6px) rotate(0deg);
+}
+
+.menu-opened .burger-container {
+    transform: rotate(90deg);
+}
+
+.menu-opened .burger-container #burger .bar, .menu-opened .burger-container #burger-main .bar {
+    transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition-delay: 0.2s;
+}
+
+.menu-opened .burger-container #burger .bar.topBar, .menu-opened .burger-container #burger-main .bar.topBar {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.menu-opened .burger-container #burger .bar.btmBar, .menu-opened .burger-container #burger-main .bar.btmBar {
+    transform: translateY(2px) rotate(-45deg);
+}

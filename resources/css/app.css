@@ -1,0 +1,58 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+    html {
+      font-family: 'GoTo-Sans', sans-serif;
+      /* Define other styles as needed */
+    }
+  }
+
+@layer base {
+    @font-face {
+        font-family: 'GoTo-Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(../../fonts/goto_sans/GOTOSans-Regular.otf) format('opentype');
+    }
+
+    ;
+
+    @font-face {
+        font-family: 'GoTo-Sans';
+        font-style: bold;
+        font-weight: 500;
+        font-display: swap;
+        src: url(../../fonts/goto_sans/GOTOSans-Medium.otf) format('opentype');
+    }
+
+    ;
+
+    @font-face {
+        font-family: 'GoTo-Sans';
+        font-weight: 600;
+        font-display: swap;
+        src: url(../../fonts/goto_sans/GOTOSans-Bold.otf) format('opentype');
+    }
+
+    ;
+
+    @font-face {
+        font-family: 'GoTo-Sans';
+        font-weight: 300;
+        font-display: swap;
+        src: url(../../fonts/goto_sans/GOTOSans-Light.otf) format('opentype');
+    }
+
+    :root {
+        --def-purple: #AC43D9;
+        --def-green: #00CC33;
+        --def-blue: #0F98E8;
+        --alt-purple: #5A286F;
+        --alt-green: #00542A;
+        --alt-blue: #062F6E;
+        --alt-orange: #ED9635;
+    }
+}
