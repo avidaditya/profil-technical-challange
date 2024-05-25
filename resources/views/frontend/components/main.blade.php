@@ -93,7 +93,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="{{ asset('frontend/js/main.module.js') }}"></script>
     <script src="{{ asset('frontend/js/main.controller.js') }}"></script>
-    <title>Open Ideas Challenge by CCE</title>
+    <title>Profile Website</title>
 
     {!! htmlScriptTagJsApi() !!}
 </head>
